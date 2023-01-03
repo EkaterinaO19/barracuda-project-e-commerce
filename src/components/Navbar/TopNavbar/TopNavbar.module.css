@@ -1,0 +1,30 @@
+.wrapper{
+    width: auto;
+    height: 44px;
+    background-color: #1E212C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+}
+.center{
+    display: flex;
+    gap: 30px;
+}
+.right{
+    display: flex;
+    gap: 50px;
+}
+
+.item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #E5E5E5;
+    display: flex;
+    cursor: pointer;
+}
+

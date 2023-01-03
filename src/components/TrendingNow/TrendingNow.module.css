@@ -1,0 +1,27 @@
+.wrapper{
+    height: auto;
+    background: #E5E5E5;
+    display: block;
+    padding: 80px;
+}
+.innerWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.title{
+    display: flex;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1E212C;
+}
+.slider{
+    display: flex;
+    flex-direction: row;
+}
+.btnWrapper{
+    display: flex;
+    justify-content: center;
+}

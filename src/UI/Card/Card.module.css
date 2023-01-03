@@ -1,0 +1,13 @@
+.top {
+    margin: 3vh;
+}
+.image{
+    display: flex;
+    height: 320px;
+    width: 285px;
+    border-radius: 4px;
+}
+.text{
+    display: block;
+    margin: 16px;
+}

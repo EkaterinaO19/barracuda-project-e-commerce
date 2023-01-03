@@ -1,0 +1,28 @@
+.wrapper{
+    height: 600px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 60px;
+}
+.title{
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1E212C;
+}
+.image{
+    display: flex;
+    gap: 30px;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #1E212C;
+    margin-top: 30px;
+}

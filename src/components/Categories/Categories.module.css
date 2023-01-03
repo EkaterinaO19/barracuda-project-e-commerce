@@ -1,0 +1,80 @@
+.wrapper{
+    display: block;
+    width: auto;
+}
+.raw1{
+    display: grid;
+    grid-template-columns: 1.2fr 1.8fr;
+    height: 500px;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.raw2{
+    width: auto;
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr;
+    gap: 16px;
+}
+.categoryImg {
+    object-fit: cover;
+    z-index: -1;
+}
+.card1 .card2 .card3 .card4{
+    display: flex;
+    width: auto;
+}
+.card4{
+    display: flex;
+    height: 500px;
+    background-color: #E5E8ED;
+    border-radius: 4px;
+    width: content-box;
+}
+.promo{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+    margin-left: 60px;
+}
+.topTitle{
+    display: flex;
+    margin: 60px;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1E212C;
+}
+.title{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #1E212C;
+}
+.bottom{
+    width: 360px;
+    height: 44px;
+}
+.inputGroup{
+    display: flex;
+    margin-top: 60px;
+}
+.input{
+    padding: 16px 11px;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+}
+.inputButton{
+    color: white;
+    background-color: #17696A;
+}
+.description{
+    margin-top: 16px;
+    font-size: 14px;
+    display: flex;
+}

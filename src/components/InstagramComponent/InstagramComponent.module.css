@@ -1,0 +1,43 @@
+.wrapper{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:center;
+    gap: 40px;
+    padding: 150px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    display: flex;
+}
+.text{
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    align-items: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1E212C;
+}
+.title{
+    display: flex;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1E212C;
+}
+.imageGroup{
+    display: flex;
+    gap: 15px;
+}
+.image{
+    display: flex;
+    height: 260px;
+    width: 260px;
+    object-fit: cover;
+}

@@ -1,0 +1,66 @@
+.wrapper{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.article{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 140px;
+    margin-left: 280px;
+
+}
+.box{
+    display: flex;
+    z-index: 2;
+    column-gap: 40px;
+    margin-top: -50px;
+}
+.buttonGroups{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.text {
+    display: flex;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    align-items: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1E212C;
+}
+.title{
+    display: flex;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 130%;
+    /* identical to box height, or 94px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+
+    /* gray/900 */
+
+    color: #1E212C;
+}
+.item{
+    display: flex;
+    width: 390px;
+    height: 390px;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #424551;
+}

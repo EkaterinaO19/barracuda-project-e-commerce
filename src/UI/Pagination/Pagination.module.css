@@ -1,0 +1,22 @@
+.pagination{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.pageItem{
+    border: solid 1px #17696A;
+    color: #17696A;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+.class:active,
+.class:focus,
+.pageItem:hover{
+    color: white;
+    background: #17696A;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}

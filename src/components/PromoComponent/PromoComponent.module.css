@@ -1,0 +1,27 @@
+.wrapper{
+    display: flex;
+    height: 300px;
+    background-color: #1E212C;
+    align-items: center;
+    justify-content: center;
+    gap: 170px;
+}
+.left{
+    display: flex;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.text{
+    display: flex;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 200%;
+    color: #FFFFFF;
+}
+.buttonsGroup{
+    display: flex;
+    gap: 40px;
+}

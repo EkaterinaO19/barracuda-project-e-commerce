@@ -1,0 +1,25 @@
+
+.image{
+    display: flex;
+    height: 300px;
+    width: 300px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.img{
+    display: flex;
+}
+.text{
+    display: block;
+    margin: 16px;
+}
+.price{
+    color: #FF4242;
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 12px;
+}
+.oldPrice{
+    text-decoration: line-through;
+    color: #424551;
+}

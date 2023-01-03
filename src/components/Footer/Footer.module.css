@@ -1,0 +1,32 @@
+.footer{
+    background: #1E212C;
+    width: 100%;
+    height: fit-content;
+}
+.wrapper{
+    display: flex;
+    font-size: 16px;
+    justify-content: space-around;
+    padding: 60px 0 60px 0;
+}
+.title{
+    display: flex;
+    color: white;
+    font-size:16px;
+    margin-bottom: 8px;
+}
+.left .center .right {
+    display: flex;
+}
+.item{
+    display: flex;
+    margin-bottom: 4px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.49);
+}
+.bottom-footer{
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.49);
+    color: #424551;
+}

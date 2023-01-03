@@ -1,0 +1,21 @@
+.wrapper{
+    display: flex;
+    width: auto;
+    height: 34px;
+    background: #17696A;
+    align-items: center;
+    justify-content: center
+}
+
+.items{
+    display: flex;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center
+}
+.item{
+    display: flex;
+}

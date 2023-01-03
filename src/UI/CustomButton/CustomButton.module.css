@@ -1,0 +1,17 @@
+.button{
+    display: flex;
+    align-items: center;
+    padding: 16px 32px;
+    border: 1px solid #17696A;
+    color: #17696A;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.button:hover, .button:focus {
+    background-color: #17696A;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}

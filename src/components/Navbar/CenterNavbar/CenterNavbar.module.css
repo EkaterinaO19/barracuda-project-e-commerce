@@ -1,0 +1,49 @@
+.wrapper{
+    display: flex;
+    width: auto;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    font-weight: bold;
+    font-size: 50px;
+}
+.left{
+    display: flex;
+    gap: 40px;
+}
+.right{
+    display: flex;
+    gap: 40px;
+}
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+.item {
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+    cursor: pointer;
+}
+.alarm{
+    color: #FF4242;
+    font-weight: bold;
+    display: flex;
+    font-size: 16px;
+    line-height: 160%;
+    cursor: pointer;
+}
+.square{
+    display: flex;
+    border-radius: 4px;
+    background-color: #03CEA4;
+    width: auto;
+    height: fit-content;
+    padding: 1px 8px;
+}
