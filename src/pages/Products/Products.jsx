@@ -7,21 +7,21 @@ import SaleUp from "../../components/SaleUp/SaleUp";
 import Pagination from "../../UI/Pagination/Pagination";
 
 
-function Products(props) {
+function Products() {
 
     const [currentPage, setCurrentPage] = useState(1)
     const [productsPerPage] = useState(3)
 
 
-    const fetchProductsList = async () => {
-            const response = await axios.get('https://fakestoreapi.com/products');
+    const fetchProductsList = async (value) => {
+            const response = await axios.get(`https://fakestoreapi.com/products/${value}`);
             return response.data;
     }
 
-    const { isLoading, isError, data, error } = useQuery({
-        queryKey: ['products'],
-        queryFn: fetchProductsList,
-    })
+
+    const [value, setValue] = useState('');
+
+    const {data, isLoading, isError, error} = useQuery(['products', value], () => fetchProductsList(value));
 
     if (isLoading) {
         return <span>Loading...</span>
@@ -40,8 +40,9 @@ function Products(props) {
 
     return (
         <>
-            <ProductsPage data={currentProducts}/>
+            <ProductsPage data={currentProducts} value={value} setValue={setValue}/>
             <Pagination
+                currentPage={currentPage}
                 productsPerPage={productsPerPage}
                 totalProducts={data.length}
                 paginate={paginate}

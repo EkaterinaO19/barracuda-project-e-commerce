@@ -34,7 +34,6 @@ function Footer(props) {
                         </ul>
                     </div>
                 </div>
-                <div className={'bottom-footer'}>© All rights reserved.</div>
             </footer>
         </>
     )
