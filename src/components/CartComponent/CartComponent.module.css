@@ -1,0 +1,42 @@
+.cart {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.cartTitle {
+    text-align: center;
+}
+
+.cartItems {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cartItem {
+    width: calc(25% - 1rem);
+    margin: 0.5rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    display: flex;
+}
+
+.cartItemImage {
+    width: 150px;
+}
+
+.cartItemInfo {
+    flex: 1;
+    padding-left: 1rem;
+}
+
+.cartItemRemove {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.emptyCart {
+    text-align: center;
+}

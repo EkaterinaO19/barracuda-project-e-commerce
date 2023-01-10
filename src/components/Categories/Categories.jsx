@@ -16,7 +16,7 @@ function Categories(props) {
                         <span className={styles.topTitle}>Summer Collections</span>
                         <p className={styles.title}>Sale Up to 70%</p>
                         <CustomButton>
-                            <Link to="/products/1">Explore new prices </Link>
+                            <Link to="/products">Explore new prices </Link>
                         </CustomButton>
                     </div>
                     <img src={Girl} alt={'img'} className={styles.categoryImg}/>
@@ -26,7 +26,7 @@ function Categories(props) {
                         <span className={styles.topTitle}>Deal of the week</span>
                         <p className={styles.title}>Stay Warm With Our <br/>New Sweaters</p>
                         <CustomButton>
-                            <Link to="/products/1">Shop now</Link>
+                            <Link to="/products">Shop now</Link>
                         </CustomButton>
                     </div>
                     <img src={Boy} alt={'img'} className={styles.categoryImg}/>
@@ -39,7 +39,7 @@ function Categories(props) {
                         <p className={styles.title}>Shoes & Bags<br/>
                             autumn / winter 2020 </p>
                         <CustomButton>
-                            <Link to="/products/1">See offers</Link>
+                            <Link to="/products">See offers</Link>
                         </CustomButton>
                     </div>
                     <img src={Shoes} alt={'img'}  className={styles.categoryImg}/>

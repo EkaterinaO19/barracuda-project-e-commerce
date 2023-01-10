@@ -1,0 +1,41 @@
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 5rem;
+}
+.left {
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+}
+.right {
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    gap: 1rem;
+}
+.image {
+    width:400px;
+    height: auto;
+    object-fit: contain;
+}
+.title{
+    display: flex;
+    font-size: 2em;
+    color: #17696A;
+    font-weight: bold;
+}
+.description{
+    display: flex;
+}
+.price{
+    display: flex;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.button {
+    display: flex;
+}

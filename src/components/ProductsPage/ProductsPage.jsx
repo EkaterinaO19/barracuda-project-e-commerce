@@ -3,7 +3,9 @@ import {Layout, Rate, theme} from 'antd';
 import Sider from "antd/es/layout/Sider";
 import {Link} from "react-router-dom";
 import SiderProductsMenu from "../SiderProductsMenu/SiderProductsMenu";
-
+import CustomButton from "../../UI/CustomButton/CustomButton";
+import styles from './ProductsPage.module.css';
+import Product from "../../pages/Product/Product"
 
 const { Content } = Layout;
 
@@ -30,16 +32,19 @@ function ProductsPage({value, setValue, data}) {
                             background: colorBgContainer,
                         }}
                     >
-                       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', gap:'100px 100px'}}>
-                           {data.map((item) =>
-                               <div key={item.id} style={{width:'400px', height:'450px'}}>
-                                   <Link to={`/product/${item.id}`}>
-                                       <Rate value={item.rating.rate}
+                       <div className={styles.card}>
+                           {data && data.map((item) =>
+                               <div key={item.id} style={{width:'fit-content', height:'fit-content'}}>
+                                   <Link to={`/products/${item.id}`}>
+                                       <Rate value={item?.rating?.rate}
                                        />
-                                       <img src={item.image} alt={item.title} style={{width:'270px', height:'350px', objectFit:'contain'}}/>
-                                       <p>{item.title}</p>
-                                       <p>$ {item.price}</p>
+                                       <img src={item?.image} alt={item.title} style={{width:'270px', height:'350px', objectFit:'contain'}}/>
+                                       <p>{item?.title}</p>
+                                       <p>$ {item?.price}</p>
                                    </Link>
+                                   <div className={styles.button}>
+                                      <CustomButton>Add to Cart</CustomButton>
+                                   </div>
                                </div>
                            )}
                        </div>

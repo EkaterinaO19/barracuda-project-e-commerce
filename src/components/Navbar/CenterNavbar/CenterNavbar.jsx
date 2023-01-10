@@ -1,8 +1,6 @@
 import styles from './CenterNavbar.module.css'
 import React, { useState } from 'react';
-import {Link} from 'react-router-dom'
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import {Link} from 'react-router-dom';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 
@@ -41,7 +39,7 @@ function CenterNavbar(props) {
                     <div className={styles.item}>
                         <ShoppingCartOutlinedIcon />
                         <div className={styles.square}>
-                            <span className={styles.item}>4</span>
+                            <span className={styles.item}></span>
                         </div>
                     </div>
                 </div>
