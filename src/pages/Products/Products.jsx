@@ -5,28 +5,26 @@ import axios from "axios";
 import InstagramComponent from "../../components/InstagramComponent/InstagramComponent";
 import SaleUp from "../../components/SaleUp/SaleUp";
 import Pagination from "../../UI/Pagination/Pagination";
-import {Spin} from "antd";
 
 
-function Products() {
+function Products(props) {
 
     const [currentPage, setCurrentPage] = useState(1)
     const [productsPerPage] = useState(3)
 
 
     const fetchProductsList = async () => {
-            const response = await axios.get(`https://fakestoreapi.com/products`);
+            const response = await axios.get('https://fakestoreapi.com/products');
             return response.data;
     }
 
-
-    const [value, setValue] = useState('');
-
-    const {data, isLoading, isError, error} = useQuery(['products', value], () => fetchProductsList(value));
+    const { isLoading, isError, data, error } = useQuery({
+        queryKey: ['products'],
+        queryFn: fetchProductsList,
+    })
 
     if (isLoading) {
-        return  <Spin tip="Loading" size="large">
-        <div className="content" style={{height: '100vh'}} /></Spin>
+        return <span>Loading...</span>
     }
 
     if (isError) {
@@ -38,13 +36,12 @@ function Products() {
     const currentProducts = data.slice(indexOfFirstProduct, indexOfLastProduct);
 
     const paginate = pageNumber => setCurrentPage(pageNumber);
-    
+
 
     return (
         <>
-            <ProductsPage data={currentProducts} value={value} setValue={setValue}/>
+            <ProductsPage data={currentProducts}/>
             <Pagination
-                currentPage={currentPage}
                 productsPerPage={productsPerPage}
                 totalProducts={data.length}
                 paginate={paginate}
