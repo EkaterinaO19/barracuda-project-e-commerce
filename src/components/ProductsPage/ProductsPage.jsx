@@ -2,10 +2,8 @@ import React, {useState} from 'react';
 import {Layout, Menu, Rate, Select, theme} from 'antd';
 import Sider from "antd/es/layout/Sider";
 import styles from './ProductsPage.module.css'
-import Card from '../../UI/Card/Card'
 import {Link} from "react-router-dom";
 import CustomButton from "../../UI/CustomButton/CustomButton";
-import Pagination from "../../UI/Pagination/Pagination"
 
 
 const { Content } = Layout;
@@ -112,10 +110,10 @@ function ProductsPage(props) {
                         }}
                     >
                        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', gap:'100px 100px'}}>
-                           {props.data.map((item) =>
+                           {props?.data?.map((item) =>
                                <div key={item.id} style={{width:'400px', height:'450px'}}>
-                                   <Link to={`/product/${item.id}`}>
-                                       <Rate value={item.rating.rate}
+                                   <Link to={`/products/${item.id}`}>
+                                       <Rate value={item?.rating?.rate}
                                        />
                                        <img src={item.image} alt={item.title} style={{width:'270px', height:'350px', objectFit:'contain'}}/>
                                        <p>{item.title}</p>

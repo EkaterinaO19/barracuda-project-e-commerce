@@ -10,19 +10,22 @@ function ProductPage({data}) {
         console.log('changed', value);
     };
 
+    const addToCart = (e) => {
+        e.preventDefault();
+    }
     return (
             <div className={styles.card}>
                     <div key={data.id} className={styles.left}>
                             <Rate value={data?.rating?.rate}/>
-                            <img src={data?.image} alt={data.title} className={styles.image}/>
+                            <img src={data?.image} alt={data?.title} className={styles.image}/>
                     </div>
                     <div className={styles.right}>
                            <p className={styles.title}>{data?.title}</p>
                             <p className={styles.price}>$ {data?.price}</p>
                             <p className={styles.description}>{data?.description}</p>
-                        <InputNumber min={1} max={10} defaultValue={2} onChange={onChange} />
+                        <InputNumber min={1} max={10} defaultValue={1} onChange={onChange} />
                         <div className={styles.button}>
-                                <CustomButton>Add to Cart</CustomButton>
+                                <CustomButton onClick={addToCart}>Add to Cart</CustomButton>
                             </div>
                     </div>
             </div>

@@ -9,6 +9,7 @@
     background-color: transparent;
     cursor: pointer;
     margin-top: 40px;
+    justify-content: center;
 }
 .button:hover, .button:focus {
     background-color: #17696A;

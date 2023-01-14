@@ -9,13 +9,11 @@ import {useParams} from "react-router-dom";
 function Product() {
     let {id} = useParams();
 
-    const fetchProduct = async (productId) => {
-        const response = await axios.get(`https://fakestoreapi.com/products/${productId}`);
+    const fetchProduct = async (id) => {
+        const response = await axios.get(`https://fakestoreapi.com/products/${id}`);
         return response.data;
     }
 
-
-    const [productId, setProductId] = useState('');
 
     const {data, isLoading, isError, error} = useQuery(['product', id], () => fetchProduct(id));
 
@@ -31,7 +29,7 @@ function Product() {
 
     return (
         <>
-            <ProductPage data={data} productId={productId} setProductId={setProductId}/>
+            <ProductPage data={data}/>
             <InstagramComponent/>
         </>
 

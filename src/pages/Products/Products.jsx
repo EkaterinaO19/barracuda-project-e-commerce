@@ -5,6 +5,7 @@ import axios from "axios";
 import InstagramComponent from "../../components/InstagramComponent/InstagramComponent";
 import SaleUp from "../../components/SaleUp/SaleUp";
 import Pagination from "../../UI/Pagination/Pagination";
+import {Spin} from "antd";
 
 
 function Products(props) {
@@ -24,7 +25,7 @@ function Products(props) {
     })
 
     if (isLoading) {
-        return <span>Loading...</span>
+        return <span><Spin/></span>
     }
 
     if (isError) {
